@@ -67,20 +67,7 @@ const Contact = () => {
                 <span>25 129 547</span>
               </div>
             </div>
-            <div className="social-links">
-              <a href="https://linkedin.com/in/trabelsi-wejden" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faLinkedin} />
-                LinkedIn
-              </a>
-              <a href="https://github.com/WejdenTrabelsi" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} />
-                GitHub
-              </a>
-              <a href="https://leetcode.com/wejdentrabelsi" target="_blank" rel="noopener noreferrer">
-                <span style={{fontSize: '1.2em'}}>⚡</span>
-                LeetCode
-              </a>
-            </div>
+            
           </div>
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
