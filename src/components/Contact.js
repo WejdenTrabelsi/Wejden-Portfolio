@@ -20,17 +20,16 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     emailjs
       .send(
-        'service_yd04v7n', // Replace with your EmailJS Service ID
-        'template_sjjm1lq', // Replace with your EmailJS Template ID
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         {
           name: formData.name,
           email: formData.email,
           message: formData.message
         },
-        'Bhp7lYQEUr7BvQwye' // Replace with your EmailJS User ID
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -45,6 +44,7 @@ const Contact = () => {
       );
   };
 
+  // ... rest of your component (form JSX, etc.)
   return (
     <section id="contact" className="contact">
       <div className="container">
@@ -57,7 +57,6 @@ const Contact = () => {
               where I can contribute to exciting projects in business intelligence, 
               web development, or data analysis.
             </p>
-            
             <div className="contact-details">
               <div className="contact-item">
                 <FontAwesomeIcon icon={faEnvelope} />
@@ -68,10 +67,21 @@ const Contact = () => {
                 <span>25 129 547</span>
               </div>
             </div>
-
-            
+            <div className="social-links">
+              <a href="https://linkedin.com/in/trabelsi-wejden" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLinkedin} />
+                LinkedIn
+              </a>
+              <a href="https://github.com/WejdenTrabelsi" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} />
+                GitHub
+              </a>
+              <a href="https://leetcode.com/wejdentrabelsi" target="_blank" rel="noopener noreferrer">
+                <span style={{fontSize: '1.2em'}}>⚡</span>
+                LeetCode
+              </a>
+            </div>
           </div>
-
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="name">Name</label>
@@ -84,7 +94,6 @@ const Contact = () => {
                 required
               />
             </div>
-            
             <div className="form-group">
               <label htmlFor="email">Email</label>
               <input
@@ -96,7 +105,6 @@ const Contact = () => {
                 required
               />
             </div>
-            
             <div className="form-group">
               <label htmlFor="message">Message</label>
               <textarea
@@ -108,7 +116,6 @@ const Contact = () => {
                 required
               ></textarea>
             </div>
-            
             <button type="submit" className="btn-primary">Send Message</button>
           </form>
         </div>
