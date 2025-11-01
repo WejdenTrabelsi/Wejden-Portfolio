@@ -17,6 +17,13 @@ const Projects = () => {
       category: "web"
     },
     {
+      title: "SmartJobMatcher",
+      description: "Full-stack development of an AI-powered job and skill matching platform connecting candidates and recruiters through intelligent recommendations.",
+      tech: ["React", "Node.js", "MongoDB", "NLP"],
+      github: "https://github.com/WejdenTrabelsi/SmartJobMatcher.git",
+      category: "web"
+    },
+    {
       title: "Quiz Application",
       description: "Interactive quiz application with navigation, automatic score calculation and responsive interface",
       tech: ["Angular", "TypeScript"],
