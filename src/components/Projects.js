@@ -22,6 +22,12 @@ const Projects = () => {
       tech: ["React", "Node.js", "MongoDB", "NLP"],
       github: "https://github.com/WejdenTrabelsi/SmartJobMatcher.git",
       category: "web"
+    },{
+      title: "AI Research Paper Analyzer",
+      description: "Developed a Python tool to analyze research papers using NLP for sentiment analysis, keyword extraction, summarization and AI-generated insights.",
+      tech: ["Python"],
+      github: "https://github.com/WejdenTrabelsi/AI-Research-Paper-Analyzer.git",
+      category: "ai"
     },
     {
       title: "Quiz Application",
