@@ -30,6 +30,13 @@ const Projects = () => {
       category: "ai"
     },
     {
+      title: "E-Commerce BI Pipeline Forecasting System",
+      description: "Pipeline BI complet : ETL Python, DataWarehouse PostgreSQL avec cubes OLAP (Cube.js), prévision des ventes(scikit-learn) et visualisation KPIs sous Superset.",
+      tech: ["Python","PostgreSQL","Cube.js","Superset"],
+      github: "https://github.com/WejdenTrabelsi/E-Commerce-BI-Pipeline-Forecasting-System.git",
+      category: "data"
+    },
+    {
       title: "Quiz Application",
       description: "Interactive quiz application with navigation, automatic score calculation and responsive interface",
       tech: ["Angular", "TypeScript"],

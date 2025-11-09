@@ -9,7 +9,7 @@ const Skills = () => {
     },
     {
       title: "Data Science & BI",
-      skills: ["Power BI", "Tableau", "EViews", "Excel", "SPSS", "Pandas", "NumPy"],
+      skills: ["Power BI", "Tableau","Talend", "EViews", "Excel", "SPSS","R", "Pandas", "NumPy","Apache Superset","Cube.js","Grafana"],
       icon: "📊"
     },
     {
@@ -23,8 +23,8 @@ const Skills = () => {
       icon: "🗄️"
     },
     {
-      title: "Tools & Software",
-      skills: ["Docker", "Git", "Qt Designer", "Talend", "Arduino"],
+      title: "DevOps",
+      skills: ["Docker", "Git", "Jenkins", "GitLab CI/CD", "Bash scripting"],
       icon: "🛠️"
     },
     {
